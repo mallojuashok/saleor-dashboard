@@ -6,7 +6,7 @@ pipeline{
     stages {
         stage{
             steps('GIT'){
-                git branch: 'main' , url: 'https://github.com/mallojuashok/saleor-dashboard.git'
+                git branch:'main', url:'https://github.com/mallojuashok/saleor-dashboard.git'
             }
         }
         stage{
