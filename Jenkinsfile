@@ -14,6 +14,11 @@ pipeline {
                 sh 'docker image build -t ashokachary/saleor-dashboard:DEV .'
             }
         }
+        stage('docker image push to registry') {
+            steps {
+                sh 'docker image push ashokachary/saleor-dashboard:DEV '
+            }
+        }
         
     }
 }
