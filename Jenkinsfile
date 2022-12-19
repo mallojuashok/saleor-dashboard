@@ -3,7 +3,7 @@ pipeline{
     triggers {
         pollSCM('* * * * *')
     }
-    stages{
+    stages {
         stage{
             steps('GIT'){
                 git branch: 'main' , url: 'https://github.com/mallojuashok/saleor-dashboard.git'
